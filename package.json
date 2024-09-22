@@ -1,5 +1,5 @@
 {
-  "name": "proxify",
+  "name": "@kerry-okpere/proxify",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,13 @@
       "import": "./dist/proxify.js",
       "require": "./dist/proxify.umd.cjs"
     }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kerry-okpere/proxify.git"
   },
   "scripts": {
     "dev": "vite",
