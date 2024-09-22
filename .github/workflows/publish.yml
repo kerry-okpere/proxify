@@ -24,7 +24,7 @@ jobs:
           file-url: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.event.release.target_commitish }}/package.json
           static-checking: localIsNew
       - name: Publish to GitHub Package Registry
-        if: steps.check.outputs.changed == 'true'
+        # if: steps.check.outputs.changed == 'true' TODO: comment out for now
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
