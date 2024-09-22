@@ -1,0 +1,27 @@
+{
+  "name": "proxify",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/proxify.umd.cjs",
+  "module": "./dist/proxify.js",
+  "exports": {
+    ".": {
+      "import": "./dist/proxify.js",
+      "require": "./dist/proxify.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}
